@@ -23,7 +23,3 @@ También realizar una pagina donde visualizar todos los usuarios creados donde p
 * Para la funcionalidad emplee JavaScript con JQuery.
 * Para manejar los datos use PHP.
 * Para la base de datos utilicé MySQL. 
-
-
->[!NOTE]  
-> Soy conciente que hay muchas cosas que mejorar, practicas que aplicar e incluso vulnerabilidades.
