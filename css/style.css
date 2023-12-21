@@ -1,0 +1,30 @@
+#bgpop {
+  display: none;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.75);
+  z-index: 50;
+}
+
+#popup {
+  display: none;
+  position: absolute;
+  padding: 2%;
+  width: fit-content;
+  height: fit-content;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 65;
+  background-color: rgb(255, 255, 255);
+}
+
+#login,
+#error,
+#success,
+#signoff {
+  display: none;
+}

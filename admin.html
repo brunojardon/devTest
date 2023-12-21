@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Manager</title>
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div id="bgpop"></div>
+    <div id="popup">
+      <button
+        type="button"
+        onclick="closePop()"
+        class="float-end btn btn-outline-danger"
+      >
+        X
+      </button>
+      <div id="form">
+        <h2 class="title mb-4">Edición de Usuarios</h2>
+        <div class="input-group">
+          <form class="form-floating my-2">
+            <input type="text" class="form-control" id="name" placeholder="" />
+            <label class="text-secondary" for="floatingInputValue"
+              >Nombre</label
+            >
+          </form>
+          <form class="form-floating my-2">
+            <input
+              type="text"
+              class="form-control"
+              id="lastname"
+              placeholder=""
+            />
+            <label class="text-secondary" for="floatingInputValue"
+              >Apellido</label
+            >
+          </form>
+        </div>
+
+        <form class="form-floating my-2">
+          <input
+            type="password"
+            class="form-control"
+            id="password"
+            placeholder=""
+          />
+          <label class="text-secondary" for="floatingInputValue"
+            >Contraseña</label
+          >
+        </form>
+        <form class="form-floating my-2">
+          <input
+            type="password"
+            class="form-control"
+            id="reppassword"
+            placeholder=""
+          />
+          <label class="text-secondary" for="floatingInputValue"
+            >Confirme su Contraseña</label
+          >
+        </form>
+        <form class="form-floating my-2">
+          <input type="email" class="form-control" id="email" placeholder="" />
+          <label class="text-secondary" for="floatingInputValue">Email</label>
+        </form>
+        <form class="form-floating my-2">
+          <input type="number" class="form-control" id="age" placeholder="" />
+          <label class="text-secondary" for="floatingInputValue">Edad</label>
+        </form>
+        <select id="category" class="form-select my-2">
+          <option value="Alumno">Alumno</option>
+          <option value="Profesor">Profesor</option>
+          <option value="Preceptor">Preceptor</option>
+          <option value="Directivo">Directivo</option>
+        </select>
+        <div id="sendbtn"></div>
+        <div id="error" class="alert alert-danger mt-2" role="alert"></div>
+      </div>
+    </div>
+    <div class="container mt-4 border border-secondary">
+      <table class="table table-striped table-hover">
+        <thead>
+          <tr>
+            <th scope="col">UserID</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Apellido</th>
+            <!-- <th scope="col">Contraseña</th> -->
+            <th scope="col">Email</th>
+            <th scope="col">Edad</th>
+            <th scope="col">Categoría</th>
+            <th colspan="2" scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody id="users"></tbody>
+      </table>
+    </div>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>

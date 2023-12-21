@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing demo</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/bootstrap.css" />
+  </head>
+  <body>
+    <div id="bgpop"></div>
+    <div id="popup">
+      <button
+        type="button"
+        onclick="closePop()"
+        class="float-end btn btn-outline-danger"
+      >
+        X
+      </button>
+      <div id="form"></div>
+      <div id="error" class="alert alert-danger mt-2" role="alert"></div>
+    </div>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./admin.html">Admin</a>
+            </li>
+          </ul>
+          <div id="sessionbtn"></div>
+        </div>
+      </div>
+    </nav>
+    <div id="bodys">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Neque iste ratione eaque expedita porro cum labore itaque odit accusantium totam sunt necessitatibus iure aliquam officia placeat, non eligendi quisquam maiores?</div>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/jquery.js"></script>
+  </body>
+  <script src="./js/sessionStatus.js"></script>
+  <script src="./js/questions.js"></script>
+  <script src="./js/popup.js"></script>
+  <script src="./js/sign.js"></script>
+  <script src="./js/login.js"></script>
+</html>
