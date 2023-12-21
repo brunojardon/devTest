@@ -25,5 +25,5 @@ También realizar una pagina donde visualizar todos los usuarios creados donde p
 * Para la base de datos utilicé MySQL. 
 
 
->[!Nota]  
+>[!NOTE]  
 > Soy conciente que hay muchas cosas que mejorar, practicas que aplicar e incluso vulnerabilidades.
