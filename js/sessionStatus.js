@@ -4,7 +4,7 @@ $.get("./php/sessionStatus.php", function (response) {
   localStorage.setItem("email", response.email);
   localStorage.setItem("category", response.category);
 
-  if (response.name == null) {
+  if (response.name == '') {
     $("#sessionbtn").html(`<button
               type="button"
               onclick="showSign()"
