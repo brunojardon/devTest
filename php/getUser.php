@@ -27,7 +27,3 @@ if (!empty($_POST["userID"])) {
     $response["status"] = "error";
     $response["message"] = "No se recibío el userID.";
 }
-
-if ($response["status"] == "error") {
-    echo json_encode($response);
-}
